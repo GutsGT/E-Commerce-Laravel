@@ -1,3 +1,14 @@
+Executar projeto:
+    Com seu sistema de localhost inicializado (no meu caso, utilizei o XAMPP). 
+    Abra a pasta do projeto no terminal.
+    Execute "php artisan migrate --seed" para criar exemplos de dados no banco.
+    Execute "php artisan serve" para executar o projeto
+    Acesse o projeto no seu localhost
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
