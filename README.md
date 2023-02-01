@@ -1,4 +1,9 @@
 <pre>
+Projeto Tutorial aprendido com Tiago Matos em: <a>https://www.youtube.com/playlist?list=PLcoYAcR89n-reidRFA3XCIvQPeKFt4dQU</a> <br>
+<br>
+<br>
+
+
 Executar projeto:<br>
     - Com seu sistema de localhost inicializado (no meu caso, utilizei o XAMPP).<br>
     - Abra a pasta do projeto no terminal.<br>
