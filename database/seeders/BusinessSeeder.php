@@ -15,7 +15,7 @@ class BusinessSeeder extends Seeder
      */
     public function run()
     {
-        Business::factory(2)->create();
+        Business::factory(100)->create();
         /* Query Builder
             Pode utilizar essa query builder, ou executar um SQL ou importar um banco caso ele já exista
             DB::table('businesses')->insert([]);

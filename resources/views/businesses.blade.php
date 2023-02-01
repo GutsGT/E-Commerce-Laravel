@@ -4,42 +4,50 @@
 @endsection
 
 @section('content')
-    <h5>Add Business</h5>
+    <h3><b>Add Business</b></h3>
+    <br>
     <!-- {{ print_r($errors) }} -->
-    <br><br>
     <form enctype="multipart/form-data" method="POST" action="{{ route('businesses.store') }}">
         @csrf
-        <input type="text" name="name" value="{{ old('name') }}">
-        <br>
+        
         @error('name')
-            {{ $message }}
+            <input type="text" name="name" value="{{ old('name') }}" placeholder="Name" required>
+        @else
+            <input type="text" name="name" value="{{ old('name') }}" placeholder="Name">
         @enderror
-        <br><br>
-        <input type="text" name="email" value="{{ old('email') }}">
+        <br>
         <br>
         @error('email')
-            {{ $message }}
+            <input type="text" name="email" value="{{ old('email') }}" placeholder="Email" required>
+        @else
+            <input type="text" name="email" value="{{ old('email') }}" placeholder="Email">
         @enderror
-        <br><br>
-        <input type="text" name="address" value="{{ old('address') }}">
+        <br>
+        <br>
+        <input type="text" name="address" value="{{ old('address') }}" placeholder="Address">
         <br>
         @error('address')
-            {{ $message }}
+            //
         @enderror
-        <br><br>
-        <input type="file" name="logo">
+        <br>
+        <input type="file" name="logo" id="logo">
+        <label for="logo">Escolher logo</label>
         <br>
         @error('logo')
             {{ $message }}
         @enderror
-        <br><br>
+        <br>
         <button type="submit">Salvar</button>
     </form>
+    <br>
     <hr>
+    <h5>Registered Businesses</h5><br>
     @foreach($businesses as $business)
         {{ $business->name }} ({{ $business->email }})<br>
         @if($business->logo)
             <img src="{{ Storage::disk('public')->url($business->logo) }}" alt="" width=100>
         @endif
     @endforeach
+
+    {{ $businesses->links() }}
 @endsection

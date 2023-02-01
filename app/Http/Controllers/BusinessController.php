@@ -11,7 +11,10 @@ class BusinessController extends Controller
 {
     public function index(){
 
-        $businesses = Business::all();
+        //Business::all() pega todos os registros
+        //Business::paginate($x) pega apenas os $x primeiros registros e separa em páginas
+        //caso não seja passado parâmetro em paginate(), ele pegará 15 registros
+        $businesses = Business::paginate(10);
 
         return view('businesses', compact('businesses'));
 
