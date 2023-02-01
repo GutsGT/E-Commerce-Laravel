@@ -28,7 +28,7 @@ form>input:invalid{
     75% {transform: translateY(4px);}
 }
 
-form>input#logo{
+/* form>input#logo{
     display:none;
 }
 form>input#logo + label{
@@ -41,7 +41,7 @@ form>input#logo + label{
 form>input#logo + label:hover{
     border-color: black;
     cursor:pointer;
-}
+} */
 
 form>button{
     border:none;
