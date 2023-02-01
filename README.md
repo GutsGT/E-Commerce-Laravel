@@ -1,10 +1,10 @@
 <pre>
-Executar projeto:
-    Com seu sistema de localhost inicializado (no meu caso, utilizei o XAMPP). 
-    Abra a pasta do projeto no terminal.
-    Execute "php artisan migrate --seed" para criar exemplos de dados no banco.
-    Execute "php artisan serve" para executar o projeto
-    Acesse o projeto no seu localhost
+Executar projeto:<br>
+    - Com seu sistema de localhost inicializado (no meu caso, utilizei o XAMPP).<br>
+    - Abra a pasta do projeto no terminal.<br>
+    - Execute "php artisan migrate --seed" para criar exemplos de dados no banco.<br>
+    - Execute "php artisan serve" para executar o projeto<br>
+    - Acesse o projeto no seu localhost<br>
 </pre>
 
 
